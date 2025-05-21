@@ -1,0 +1,122 @@
+/* Course detail page specific styles */
+.course-detail-page .course-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.course-detail-page .course-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transform: translate(100px, -150px);
+}
+
+.course-detail-page .course-hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transform: translate(-100px, 100px);
+}
+
+/* Course tabs */
+.course-detail-page .nav-tabs {
+  border-bottom: 2px solid var(--secondary);
+}
+
+.course-detail-page .nav-tabs .nav-link {
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.course-detail-page .nav-tabs .nav-link.active {
+  border-bottom: 2px solid var(--primary);
+  background-color: transparent;
+}
+
+.course-detail-page .nav-tabs .nav-link:hover:not(.active) {
+  border-bottom: 2px solid var(--primary-hover);
+  background-color: var(--secondary);
+}
+
+/* Course content */
+.course-detail-page .course-content {
+  transition: all 0.3s ease;
+}
+
+.course-detail-page .list-group-item-action:hover {
+  background-color: var(--secondary);
+}
+
+.course-detail-page .rounded-circle {
+  transition: transform 0.3s ease;
+}
+
+.course-detail-page .list-group-item-action:hover .rounded-circle {
+  transform: scale(1.1);
+}
+
+/* Buttons */
+.course-detail-page .btn {
+  transition: all 0.3s ease;
+}
+
+.course-detail-page .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Tutor card */
+.course-detail-page .card {
+  transition: all 0.3s ease;
+}
+
+.course-detail-page .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Social sharing buttons */
+.course-detail-page .btn-outline-primary:hover {
+  background-color: #3b5998;
+  border-color: #3b5998;
+}
+
+.course-detail-page .btn-outline-info:hover {
+  background-color: #1da1f2;
+  border-color: #1da1f2;
+}
+
+.course-detail-page .btn-outline-danger:hover {
+  background-color: #e60023;
+  border-color: #e60023;
+}
+
+.course-detail-page .btn-outline-success:hover {
+  background-color: #25d366;
+  border-color: #25d366;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .course-detail-page .course-hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .course-detail-page .course-tabs .nav-link {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+}

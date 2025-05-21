@@ -1,0 +1,158 @@
+/* Color Palette - Tươi tắn */
+:root {
+  --primary: #00B4D8; /* Xanh lam sáng */
+  --secondary: #F0F4F8; /* Xám nhạt */
+  --accent: #FF6B6B; /* Cam san hô */
+  --accent-secondary: #FFD93D; /* Vàng sáng */
+  --text: #1A3C34; /* Xám đậm */
+  --link: #0077B6; /* Xanh lam đậm */
+  --success: #FFD93D; /* Vàng sáng */
+  --error: #FF8787; /* Đỏ nhạt */
+  --warning: #FFB07C; /* Cam nhạt */
+  --info: #00B4D8; /* Xanh lam sáng */
+  
+  /* Hover variants */
+  --primary-hover: #0096b5; /* Xanh lam sáng đậm hơn */
+  --accent-hover: #FF4D4D; /* Cam san hô đậm hơn */
+  --link-hover: #00B4D8; /* Xanh lam sáng */
+  --secondary-hover: #90E0EF; /* Xanh lam nhạt */
+  --cancel-hover: #2C3E50; /* Xám đậm sáng hơn */
+  
+  /* Additional colors */
+  --white: #FFFFFF;
+  --light: #F8F9FA;
+  --dark: #212529;
+  --gray: #6C757D;
+  --border: #DEE2E6;
+}
+
+/* Bootstrap Overrides */
+/* Primary buttons - Cam san hô */
+.btn-primary {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: var(--white);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: var(--accent-hover) !important;
+  border-color: var(--accent-hover) !important;
+  color: var(--white) !important;
+}
+
+/* Secondary buttons - Xám nhạt với viền xanh lam */
+.btn-secondary {
+  background-color: var(--secondary);
+  border-color: var(--primary);
+  color: var(--link);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active {
+  background-color: var(--secondary-hover) !important;
+  border-color: var(--primary) !important;
+  color: var(--link) !important;
+}
+
+/* Cancel buttons - Xám đậm */
+.btn-cancel {
+  background-color: var(--text);
+  border-color: var(--text);
+  color: var(--white);
+}
+
+.btn-cancel:hover, 
+.btn-cancel:focus,
+.btn-cancel:active {
+  background-color: var(--cancel-hover) !important;
+  border-color: var(--cancel-hover) !important;
+  color: var(--white) !important;
+}
+
+.btn-outline-primary {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+  background-color: var(--accent) !important;
+  border-color: var(--accent) !important;
+  color: var(--white) !important;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+/* Form elements */
+.form-control {
+  border-color: var(--secondary);
+}
+
+.form-control:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 0.25rem rgba(0, 180, 216, 0.25);
+}
+
+.form-label {
+  color: var(--text);
+}
+
+/* Alerts */
+.alert-success {
+  background-color: var(--success);
+  border-color: var(--success);
+  color: var(--text);
+}
+
+.alert-danger {
+  background-color: var(--error);
+  border-color: var(--error);
+  color: var(--white);
+}
+
+.alert-warning {
+  background-color: var(--warning);
+  border-color: var(--warning);
+  color: var(--text);
+}
+
+.alert-info {
+  background-color: var(--info);
+  border-color: var(--info);
+  color: var(--white);
+}
+
+/* Cards */
+.card {
+  background-color: var(--white);
+  border-color: var(--secondary);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  color: var(--link);
+}
+
+.card-text {
+  color: var(--text);
+}
+
+/* Course Grid */
+.course-grid {
+  background-color: var(--secondary);
+}
